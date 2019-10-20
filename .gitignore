@@ -36,3 +36,5 @@ hs_err_pid*
  
 
 # End of https://www.gitignore.io/api/java
+out/production/ALGO_assignment01/META-INF/
+src/Test.java
