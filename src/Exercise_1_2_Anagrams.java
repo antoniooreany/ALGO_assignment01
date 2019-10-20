@@ -3,7 +3,6 @@ import java.util.Random;
 
 public class Exercise_1_2_Anagrams {
 
-
     /**
      * @param s1 is the first string for checking for anagram.
      * @param s2 is the second string for checking for anagram.
