@@ -23,11 +23,11 @@ public class Exercise_1_2_AnagramsTest {
         assertTrue(Exercise_1_2_Anagrams.areAnagrams("SCHUTZUMSCHLAG", "UMZUGSSCHLACHT"));
     }
 
-    @Test
-    public void count() {
-        assertEquals(3, Exercise_1_2_Anagrams.count("afddsmsfamdfsm", 'm'));
-        assertEquals(8, Exercise_1_2_Anagrams.count("xafdxdsxmxsfaxxmdxfsmx", 'x'));
-        assertEquals(10, Exercise_1_2_Anagrams.count("5afdd5sms5f555am5dfs5m55", '5'));
-        assertEquals(11, Exercise_1_2_Anagrams.count("afMddMsmsfMamMdfMsmMMMMMM", 'M'));
-    }
+//    @Test
+//    public void count() {
+//        assertEquals(3, Exercise_1_2_Anagrams.count("afddsmsfamdfsm", 'm'));
+//        assertEquals(8, Exercise_1_2_Anagrams.count("xafdxdsxmxsfaxxmdxfsmx", 'x'));
+//        assertEquals(10, Exercise_1_2_Anagrams.count("5afdd5sms5f555am5dfs5m55", '5'));
+//        assertEquals(11, Exercise_1_2_Anagrams.count("afMddMsmsfMamMdfMsmMMMMMM", 'M'));
+//    }
 }

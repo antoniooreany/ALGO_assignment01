@@ -1,9 +1,8 @@
 import javax.swing.*;
-import java.util.Random;
+import java.util.*;
 
 public class Exercise_1_2_Anagrams {
-
-
+    
     /**
      * @param s1 is the first string for checking for anagram.
      * @param s2 is the second string for checking for anagram.
@@ -13,29 +12,17 @@ public class Exercise_1_2_Anagrams {
         if (s1.length() != s2.length()) {
             return false;
         }
-        for (char ch = '\u0000'; ch < '\u00ff'; ch++) {
-            if (count(s1, ch) != count(s2, ch)) {
+
+        List<String> list1 = new ArrayList<>(Arrays.asList(s1.split("")));
+        List<String> list2 = new ArrayList<>(Arrays.asList(s2.split("")));
+
+        for (String s : list1) {
+            if (Collections.frequency(list1, s) != Collections.frequency(list2, s)) {
                 return false;
             }
         }
         return true;
     }
-
-    /**
-     * @param string is the string to check.
-     * @param ch is the checking character.
-     * @return the number of the checking characters in the string to check.
-     */
-    public static int count(String string, char ch) {
-        int count = 0;
-        for (char c : string.toCharArray()) {
-            if (c == ch) {
-                count++;
-            }
-        }
-        return count;
-    }
-
 
     private static Random rand = new Random();
 
